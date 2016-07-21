@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app ng-init = "valor1 = 5; valor2 = 10; pessoa = { nome: '' }">
+<head>
+	<meta charset="utf-8">
+	<title>Binding angular</title>
+	<script type="text/javascript" src="js/angular/angular.min.js"></script>
+</head>
+<body>
+	Resultado: {{ valor1 + valor2 }}
+	<br/>
+	{{pessoa.nome}}
+
+	<h1>Seja bem vindo {{pessoa.nome}}</h1>
+	<br/>
+	<p ng-bind = "pessoa.nome"></p>
+
+	<input type="text" name="nome" ng-model="pessoa.nome" />
+	<input type="number" name="valor1" ng-model="valor1">
+	<input type="number" name="valor2" ng-model="valor2">
+</body>
+</html>
