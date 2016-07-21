@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Testando angularjs ->> {{ variavel }}</title>
+	<script>
+		
+		var total = 1 + 2;
+		console.log(total);
+
+		var pessoa = {
+			nome : "cleberson",
+			idade : 31,
+			status : false
+		};
+
+		var result;
+		if (pessoa.status) {
+			result = "Usuário " + pessoa.nome + " está ativo!";
+		} else {
+			result = "Usuário " + pessoa.nome + " está bloqueado!";
+		}
+
+		console.log(result);
+
+		var pessoas = [
+			{nome : "cleberson", idade : 31, status : true },
+			{nome : "ricardo", idade : 33, status : true},
+			{nome : "roberto", idade : 43, status : false}
+		];
+
+		for (var i = 0; i < pessoas.length; i++) {
+			document.write("<p>" + "Nome: " + pessoas[i].nome 
+								+ ", Idade: " + pessoas[i].idade
+								+ ", Status: " + pessoas[i].status + "</p>");
+		}
+
+		function iniciar() {
+			document.getElementById("campo").value = pessoa.nome;
+		};
+
+	</script>
+</head>
+<body onload="iniciar()">
+	<input type="text" value="" id="campo">
+</body>
+</html>
