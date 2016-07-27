@@ -1,3 +1,6 @@
+/*no controller é adicionado todas as regras de negócio da aplicação,
+    e os módulos que quero utilizar aqui são injetados por parametros
+*/
 app.controller('aula09Controller_1', ['$scope', 'operacoes', 'Pessoa', function($scope, operacoes, Pessoa){
     console.log("Criou Controller 09_1");
     

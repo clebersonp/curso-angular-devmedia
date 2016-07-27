@@ -13,7 +13,7 @@
         
         <div ng-controller="aula09Controller_2">
             Controller 2
-            {{ pessoa.nome }} / {{ pessoa.idade }}
+            {{ pessoa.nome }} / {{ pessoa.idade }} ------------- {{ pessoa.cumprimentar() }}
         </div>
         
         
@@ -23,7 +23,7 @@
         <script type="text/javascript" src="js/aula09Service.js"></script>
         <script type="text/javascript" src="js/aula09PessoaFactory.js"></script>
         
-        
+        <!-- controller é adicionado por ultimo pois precisa dos outros módulos criados primeiro -->
         <script type="text/javascript" src="js/aula09Controller.js"></script>
     </body>
 </html>

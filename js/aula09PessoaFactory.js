@@ -1,3 +1,4 @@
+/*fábrica para criação de objetos Pessoa*/
 app.factory('Pessoa', function(){
     console.log("Criout Factory aula 09");
     
