@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <title>Curso AngularJs</title>
+        <meta charset="utf-8" />
+    </head>
+    <body ng-controller="controllerAula10">
+        
+        <!-- Filtros pré definidos pelo angular -->
+        
+        {{ 'cleberson' | uppercase }}
+        <br/>
+        {{ pessoa.nome | uppercase }}
+        <br/>
+        
+        <!-- utilizando um filtro criado, combinando com filtro do angular -->
+        {{ ('pedreira pauluci' | saudacao) | uppercase }}
+        <br/>
+        {{ pessoa.nome | saudacao }}
+        
+        <script type="text/javascript" src="js/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/app.module.js" ></script>
+                
+        <!-- controller é adicionado por ultimo pois precisa dos outros módulos criados primeiro -->
+        <script type="text/javascript" src="js/aula10Filter.js"></script>
+        <script type="text/javascript" src="js/aula10Controller.js"></script>
+    </body>
+</html>
